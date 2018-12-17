@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/propicsetting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:background="@drawable/setting_button_border"
+            android:drawableLeft="@drawable/propicsetting"
+            android:padding="12dp"
+            android:text="프로필 사진 설정"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/loggedInWeightSetting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:background="@drawable/setting_button_border"
+            android:drawableLeft="@drawable/weightsetting"
+            android:padding="12dp"
+            android:text="몸무게 설정"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dp"/>
+
+<!--
+
+        <Button
+            android:id="@+id/BlueTooth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:background="@drawable/setting_button_border"
+            android:drawableLeft="@drawable/bluetoothsetting"
+            android:padding="12dp"
+            android:text="블루투스 연결"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/SMS_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:background="@drawable/setting_button_border"
+            android:drawableLeft="@drawable/smsetting"
+            android:padding="12dp"
+            android:text="전화번호 설정"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dp" />
+-->
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

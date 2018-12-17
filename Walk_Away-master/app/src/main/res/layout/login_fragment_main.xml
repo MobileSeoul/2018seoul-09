@@ -1,0 +1,59 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ggavi.registeration.nomal_mode.a_LoginMainFragment">
+
+
+    <!-- Switch Screen Screen-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- First Screen-->
+        <!-- Create Linear Layouts For Other Screen-->
+        <LinearLayout
+            android:id="@+id/notice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/colorBackground">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/walk_imageButton"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:background="@drawable/walk_round_click" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:paddingTop="15dp">
+
+                <TextView
+                    android:id="@+id/start_text"
+                    android:background="@color/White"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Start"
+                    android:gravity="center"
+                    android:textSize="50sp"
+                    android:textColor="@color/colorPrimary"
+                    android:padding="5dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

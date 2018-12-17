@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:padding="1dp"
+            android:text="DETAILED RECORD"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/titleForRecord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="상세 기록입니다."
+            android:textColor="@color/colorAccent"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/noRecAlert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f2fffb"
+            android:layout_marginTop="15dp"
+            android:padding="15dp"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="아직 저장된 기록이 없습니다."
+            android:gravity="center"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/deleteAllRec"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="15dp"
+            android:padding="2dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="right"
+            android:textColor="@color/colorRed"
+            android:background="@drawable/dialog_button"
+            android:gravity="center"
+            android:text="모든 기록 삭제"/>
+
+        <ListView
+            android:id="@+id/recordListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f2fffb"
+            android:layout_marginTop="5dp"
+            android:divider="@color/colorPrimaryDark"
+            android:dividerHeight="1dp"></ListView>
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

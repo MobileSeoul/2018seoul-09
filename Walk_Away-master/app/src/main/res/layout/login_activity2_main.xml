@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ggavi.registeration.nomal_mode.a_LoginMainActivity"
+    android:orientation="vertical"
+    android:background="@color/colorBackground">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2.5"
+        android:baselineAligned="false"
+        android:padding="10dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/run"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_back_prime_color"
+                android:padding="15dp"
+                android:text=" 걷기 시작 "
+                android:gravity="center"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/White"
+                android:shadowColor="@color/Main_Blue_Dark" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/courseButton"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_back_prime_color"
+                android:padding="15dp"
+                android:text=" 나의 기록 "
+                android:gravity="center"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/White"
+                android:shadowColor="@color/Main_Blue_Dark"
+                android:radius="18dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="5dp" />
+
+    <!-- Switch Screen Screen-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- First Screen-->
+        <!-- Create Linear Layouts For Other Screen-->
+        <LinearLayout
+            android:id="@+id/notice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/colorBackground">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/walk_imageButton"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:background="@drawable/walk_round_click"
+                    android:contentDescription="walk_away_image_button" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:paddingTop="15dp">
+
+                <TextView
+                    android:id="@+id/start_text"
+                    android:background="@color/White"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Start"
+                    android:gravity="center"
+                    android:textSize="50sp"
+                    android:textColor="@color/colorPrimary"
+                    android:padding="5dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!-- 걷기 시작, 나의 기록 중 하나를 선택했을 때 이걸로 화면이 바뀜-->
+        <RelativeLayout
+            android:id="@+id/fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </RelativeLayout>
+    </FrameLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="5dp" />
+
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.ggavi.ahnsungmin">
+
+
+    <!-- 인터넷 접속을 위한 인터넷 연결 허용 설정 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- 첫번째 어플에 있던거 합침 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- 푸푸씨가 한거 합침 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+
+    <!-- 어플 로고 아이콘, 제목 변경 / label을 수정해서 상단바 글자 설정 -->
+    <!-- 푸푸씨가 넣은 사진첨부 기능 용량초과로 터지길래 구글링해서 밑에 2줄 넣음 -->
+    <application
+        android:allowBackup="false"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="allowBackup,supportsRtl">
+
+
+        <!-- 구글맵 API (내 버전) -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBcK9fnze-9DmcdvqBYudSo3N4PF9r7eGc" />
+
+
+        <!-- 처음에 틀 때 실행되는 액티비티(어플 켤때 나오는 스플래시 이미지), 여기 'label' 고치면 앱 이름도 바뀜 -->
+        <activity android:name=".Splashscreen"
+            android:label="Walk Away">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 스플래시 이후 첫 실행 -->
+        <activity android:name=".nomal_mode.a_LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <!-- 위에서 LAUNCHER로 바꾸었으므로 이부분은 'DEFAULT'로 변경 -->
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".nomal_mode.a_RegisterActivity" />
+        <activity
+            android:name=".nomal_mode.a_LoginMainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+
+        <!-- 메인 화면에 개발자 버튼 추가 -->
+        <activity
+            android:name=".Pop"
+            android:theme="@style/AppTheme.Pop" />
+        <activity android:name=".FirstActivity" />
+        <activity android:name=".nomal_mode.LoggedInWalk" />
+        <activity android:name=".nomal_mode.LoggedInRecord" />
+        <activity android:name=".nomal_mode.SettingActivity" />
+
+        <!-- 프로필 -->
+        <activity android:name=".nomal_mode.ProfilePicture" />
+        <activity android:name=".nomal_mode.ProfilePictureUpload" />
+
+
+        <!-- 게임 기능 합체 -->
+        <activity android:name=".game_mode.Game0_Start" />
+        <activity android:name=".game_mode.Game1_Day" />
+        <activity android:name=".game_mode.Game2_Main" />
+        <activity android:name=".game_mode.Game3_Item" />
+        <activity android:name=".game_mode.Game4_Run" />
+        <activity
+            android:name=".game_mode.Game5_EndingVideo"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".game_mode.Game5_DeadVideo"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".game_mode.Game5_StartVideo"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        </activity>
+
+    </application>
+
+</manifest>

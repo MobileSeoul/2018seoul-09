@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00CED1</color>
+    <color name="colorPrimaryDark">#20B2AA</color>
+    <color name="colorAccent">#546E7A</color>
+    <color name="colorWarning">#ED00CB</color>
+    <color name="colorGray">#8C8C8C </color>
+    <color name="colorDanger">#8324FF</color>
+    <color name="colorRed">#FF1212</color>
+    <color name="colorSafe">#08C904</color>    <!-- 경쟁률 표시 -->
+    <color name="colorWinner">#FFD700</color>  <!-- 랭킹 표시: 1등은 황금색 -->
+    <color name="colorBackground">#AFEEEE</color>   <!-- 배경 색깔 -->
+    <color name="whiteBlack">#a8afae</color>
+
+    <!-- 색 추가 -->
+    <color name="Main_Blue">#2699FB</color>
+    <color name="Main_Blue_Dark">#257af9</color>
+    <color name="Light_Blue">#BCE0FD</color>
+    <color name="Light_Light_Blue">#d9ecfc</color>
+    <color name="White">#ffffff</color>
+</resources>

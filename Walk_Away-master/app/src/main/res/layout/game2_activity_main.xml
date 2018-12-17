@@ -1,0 +1,609 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ggavi.ahnsungmin.game_mode.Game2_Main"
+    android:background="#E0FFFF"
+    android:weightSum="4"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:background="#00BFFF"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text="현재 상태"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:weightSum="6"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        >
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/game_diet"
+            android:padding="5dp"
+
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Food :"
+            android:layout_weight="1"
+            android:textColor="#00BFFF"
+            android:gravity="start|center"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:id="@+id/Food_Amount_View_ID"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:textColor="#00BFFF"
+            android:textSize="18sp"
+            android:layout_weight="0.5"
+            android:gravity="start|center"
+            />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/game_water"
+            android:padding="5dp"
+
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Water:"
+            android:layout_weight="1"
+            android:textColor="#00BFFF"
+            android:textSize="18sp"
+            android:gravity="start|center"
+
+            />
+        <TextView
+            android:id="@+id/Water_Amount_View_Id"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:textColor="#00BFFF"
+            android:textSize="18sp"
+            android:layout_weight="0.5"
+            android:gravity="start|center"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center_vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/g0_seoul_logo"
+                android:padding="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="전체 마력 변화량: "
+                android:textColor="#00BFFF"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/Damage_Amount_View_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="-1"
+                android:textColor="#00BFFF"
+                android:textSize="18sp"
+                android:gravity="start|center"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+<!--
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1.0dp"
+    android:background="#00BFFF"
+    />
+-->
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.25"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/game_top_bar_back"
+            android:gravity="center"
+            android:text="루미의 아이템 창"
+            android:textColor="#fff" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:baselineAligned="false">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginRight="10dp"
+            >
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/game_damage"
+                android:padding="5dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="마력 변화량: "
+                android:textColor="#fabe29"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Family_One_Damage_View_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="-1"
+                android:textColor="#fabe29"
+                android:textSize="18sp"
+                android:gravity="start|center"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginRight="10dp"
+            >
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/game_hunger"
+                android:padding="5dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="배고픔: "
+                android:textColor="#fabe29"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Family_One_Hungry_View_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="100"
+                android:textColor="#fabe29"
+                android:textSize="18sp"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginRight="10dp"
+            >
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/game_hp"
+                android:padding="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="남은 마력: "
+                android:textColor="#fabe29"
+                android:textSize="18sp"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/Family_One_Hp_View_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="100"
+                android:textColor="#fabe29"
+                android:textSize="18sp"
+                android:gravity="center"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginRight="28dp"
+            >
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/game_thirst"
+                android:padding="5dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="목마름: "
+                android:textColor="#fabe29"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Family_One_Thirst_View_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="100"
+                android:textColor="#fabe29"
+                android:textSize="18sp"
+                android:gravity="start|center"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="10dp"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/game_button_back_press"
+                    android:text="Food"
+                    android:textColor="#fff"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:id="@+id/Family_One_Food_Button_Id"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/game_button_back_press"
+                    android:text="Water"
+                    android:textColor="#fff"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:id="@+id/Family_One_Water_Button_Id"
+
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.25"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/game_top_bar_back"
+            android:gravity="center"
+            android:text="레미의 아이템 창"
+            android:textColor="#fff" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:baselineAligned="false">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="10dp"
+
+                    >
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/game_damage"
+                        android:padding="5dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="마력 변화량 : "
+                        android:textColor="#fabe29"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:id="@+id/Family_Two_Damage_View_Id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="-1"
+                        android:textColor="#fabe29"
+                        android:textSize="18sp"
+                        android:gravity="start|center"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="10dp"
+                    >
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/game_hunger"
+                        android:padding="5dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="배고픔 : "
+                        android:textColor="#fabe29"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:id="@+id/Family_Two_Hungry_View_Id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="100"
+                        android:textColor="#fabe29"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="10dp"
+                    >
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/game_hp"
+                        android:padding="5dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="남은 마력: "
+                        android:textColor="#fabe29"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        />
+                    <TextView
+                        android:id="@+id/Family_Two_Hp_View_Id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="100"
+                        android:textColor="#fabe29"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="25dp"
+                    >
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/game_thirst"
+                        android:padding="5dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="목마름 : "
+                        android:textColor="#fabe29"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:id="@+id/Family_Two_Thirst_View_Id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="100"
+                        android:textColor="#fabe29"
+                        android:textSize="18sp"
+                        android:gravity="start|center"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="10dp"
+            android:baselineAligned="false">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/game_button_back_press"
+                    android:text="Food"
+                    android:textColor="#fff"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:id="@+id/Family_Two_Food_Button_Id"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/game_button_back_press"
+                    android:text="Water"
+                    android:textColor="#fff"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:id="@+id/Family_Two_Water_Button_Id"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="0.5"
+        >
+
+        <Button
+            android:id="@+id/Item_List_Button_Id"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:text="아이템 제작"
+            android:textAllCaps="false"
+            android:background="@drawable/game_top_bar_back"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:layout_margin="8dp"
+            />
+        <Button
+            android:id="@+id/Start_Running_Button_Id"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:text="걷기 시작"
+            android:textAllCaps="false"
+            android:background="@drawable/game_top_bar_back"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:layout_margin="8dp"
+            />
+    </LinearLayout>
+</LinearLayout>
